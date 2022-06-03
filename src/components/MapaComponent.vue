@@ -24,11 +24,14 @@ export default {
         iconAnchor: [22, 94],
         popupAnchor: [-3, -76],
       });
-      this.map = L.map("map").setView([-0.11533291437044707, -67.09336742717267], 13);
+      this.map = L.map("map").setView([-3.042602743486333, -59.95165651808512], 13);
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
         attribution: "© OpenStreetMap",
       }).addTo(this.map);
+      L.marker([-0.13567335749927611, -67.07951344157546], { icon: this.icon }).addTo(
+        this.map
+      );
     },
   },
 };
