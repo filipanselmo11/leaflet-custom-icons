@@ -4,7 +4,10 @@
 
 <script>
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
+import 'leaflet';
+
+const L = window['L'];
+
 export default {
   name: "MapaComponent",
   data: () => ({
